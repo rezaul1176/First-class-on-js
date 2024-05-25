@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Document</title>
 </head>
 <body>
+    <h1>Hello</h1>
+
+
+
     <script>
-        console.log("Hi js front end")
+        let i=0;
+        let arr=[30,20,7,-3,69,25,-57,10,11,18];
+        let minimum = arr[0];
+        for(;i<arr.length;i++){
+            if (arr[i] > arr[i+1]) {
+                minimum = arr[i+1] ;
+            }
+        }
+        console.log("Minimum number is "+ minimum);
     </script>
 </body>
 </html>
